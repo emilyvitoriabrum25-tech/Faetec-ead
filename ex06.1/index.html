@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSoluções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados do Cliente</legend>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" required minlength="10"> <br>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required minlength="10">
+        </fieldset>
+        <fieldset>
+            <legend>Dados do Projeto</legend>
+            <label for="servico">Tipo de serviço</label>
+            <select id="servico">
+                <option>Web</option>
+                <option>Mobile</option>
+                <option>Consultoria</option>
+            </select>
+            <br>
+            <br>
+            <label for="prazo">Prazo</label>
+            <input type="radio" id="urgente" name="prazo">
+            <label for="urgente">Urgente</label>
+
+            <input type="radio" id="normal" name="prazo">
+            <label for="normal">Normal</label>
+            <br>
+            <br>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" maxlength="200"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
