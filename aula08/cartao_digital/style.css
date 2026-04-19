@@ -1,0 +1,46 @@
+/* 1. HERANÇA — fonte definida no body é herdada por todos os filhos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* 2. SELETOR DE CLASSE — estiliza qualquer elemento com class="cartao" */
+.cartao {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* 3. SELETOR DE ID — alta especificidade, estilo único para o nome */
+#nome-usuario {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* 4. SELETOR DE CLASSE — cor secundária para o cargo */
+.profissao {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 5. SELETOR DESCENDENTE — atinge só os <a> dentro de .redes-sociais */
+.redes-sociais a {
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* 6. PSEUDO-CLASSE :hover — interatividade ao passar o mouse */
+.redes-sociais a:hover {
+    color: #e74c3c;
+}
